@@ -12,11 +12,13 @@ import {Observable, tap} from "rxjs";
 export class AppComponent implements OnInit {
   title = 'my-app';
 
-  products: IProduct[] = [];
+  // products: IProduct[] = [];
 
   loading: boolean = false;
 
   products$: Observable<IProduct[]>;
+
+  term = '';
 
   constructor(private productsService: ProductsService) {
   }
